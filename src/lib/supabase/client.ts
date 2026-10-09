@@ -16,7 +16,7 @@ export function createClient() {
     throw new Error(
       "Supabase env vars missing. Copy .env.example to .env.local and fill in " +
         "NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY from your " +
-        "Supabase project (Settings -> API). Add them in Vercel too.",
+        "Supabase project (click Connect). Add them in Vercel too.",
     );
   }
 

@@ -61,9 +61,11 @@ with it. You will be asked.
 ## Supabase (Ticket 02 — Session 2, not before)
 
 1. Create a project at [supabase.com](https://supabase.com) (free tier).
-2. **Project Settings → API**: copy the Project URL and the `anon`
-   public key.
-3. Copy `.env.example` to `.env.local` and paste them in.
+2. In your project, click **Connect** and copy the Project URL and the
+   **publishable key** (it starts with `sb_publishable_`). Older projects
+   call it the `anon` key. Either works.
+3. Copy `.env.example` to `.env.local` and paste them in. The publishable
+   key goes in `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
 4. Add the **same two variables** in Vercel: **Settings → Environment
    Variables**, then redeploy. Forgetting this step is the single most
    common reason the local app works and the live one does not.

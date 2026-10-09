@@ -33,9 +33,10 @@ English, and wait for the team to agree.
    - Row Level Security is ON for every Supabase table, with explicit
      policies. These apps are on public URLs: a table without RLS is
      readable and writable by anyone on the internet.
-   - The Supabase `service_role` key never appears in this project.
+   - The Supabase `service_role` key, or any `sb_secret_` key, never
+     appears in this project.
    - Only `NEXT_PUBLIC_` variables reach the browser, and only the
-     Supabase URL and anon key belong there.
+     Supabase URL and the publishable (anon) key belong there.
    - `.env.local` is never committed.
 5. **Teach as you go.** After every change, explain in two or three
    plain-English sentences what you changed and why. Define jargon the
